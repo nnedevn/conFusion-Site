@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1">
   <title>Ristorante Con Fusion</title>
-  <style type="text/css">:root [href^="http://www.amazon."][href*="tag="] {
-    display: none !important;
-  }</style>
+  <!--<style type="text/css">:root [href^="http://www.amazon."][href*="tag="] {-->
+  <!--display: none !important;-->
+  <!--}</style>-->
   <style type="text/css"></style>
   <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script>
 
@@ -56,7 +56,8 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=""  data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>
+          Login</a></li>
       </ul>
 
     </div>
@@ -80,8 +81,8 @@
             <label for="" class=""><input type="checkbox" value=""> Remember me</label>
             <p class="padded"></p>
             <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-default ">Sign In
-            <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancel
+              <button type="button" class="btn btn-sm btn-default ">Sign In</button>
+              <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancel</button>
             </div>
           </div>
         </form>
@@ -109,7 +110,7 @@
       <div class="col-xs-12 col-sm-2">
         <p class="padded"></p>
         <p class="padded"></p>
-        <a href="index.html#reservationForm" class="btn btn-warning btn-block" type="button" data-toggle="tooltip" title="Ot call us at 206 123 45678" data-placement="bottom">Reserve a table</a>
+        <a href="index.html#reservationForm" class="btn btn-warning btn-block" type="button">Reserve a table</a>
 
       </div>
     </div>
@@ -130,13 +131,14 @@
           <li data-target="#indexCarousel" data-slide-to="1"></li>
           <li data-target="#indexCarousel" data-slide-to="2"></li>
         </ol>
-        
+
         <!--Slide Wrapper-->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img class="img-responsive" src="img/uthappizza.png" alt="">
             <div class="carousel-caption">
-              <h2 class="media-heading">Uthappizza <span class="label label-danger label-xs">Hot</span> <span class="badge"> $9.99</span>
+              <h2 class="media-heading">Uthappizza <span class="label label-danger label-xs">Hot</span> <span
+                      class="badge"> $9.99</span>
               </h2>
               <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe
                 vine
@@ -149,8 +151,10 @@
             <img class="img-responsive" src="img/buffet.png" alt="">
             <div class="carousel-caption">
               <h2>Weekend Grand Buffet</h2>
-              <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main
-                entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+              <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
+                six main
+                entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
+                person </p>
               <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
             </div>
           </div>
@@ -193,7 +197,7 @@
       <div class="media">
         <div class="media-left media-middle">
           <a href="">
-            <img src="img/uthappizza.png" alt=` "" class="media-object img-thumbnail">
+            <img src="img/uthappizza.png" alt="" class="media-object img-thumbnail">
           </a>
         </div>
         <div class="media-body">
@@ -242,7 +246,7 @@
       <div class="media">
         <div class="media-left media-middle">
           <a href="">
-            <img class="media-object" src="img/alberto.png" alt="Alberto Somayya" class="media-object">
+            <img class="media-object" src="img/alberto.png" alt="Alberto Somayya">
           </a>
         </div>
         <div class="media-body">
@@ -395,12 +399,11 @@
 </footer>
 
 
-<iframe id="rdbIndicator" width="100%" height="270" border="0" src="./Ristorante Con Fusion_files/indicator.html"
-        style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe>
+
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
