@@ -101,3 +101,9 @@ address {
     left:0;
     min-height: 300px;
 }
+
+#indexCarouselButtons {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}

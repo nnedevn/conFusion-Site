@@ -66,31 +66,6 @@
   </div>
 </nav>
 
-<div class="modal fade" id="loginModal" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="close" type="button" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Login </h4>
-      </div>
-      <div class="modal-body">
-        <form action="" class="form-inline">
-          <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email">
-            <input type="password" class="form-control" placeholder="Password">
-            <label for="" class=""><input type="checkbox" value=""> Remember me</label>
-            <p class="padded"></p>
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-default ">Sign In</button>
-              <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancel</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
 <header class="jumbotron">
 
   <!-- Main component for a primary marketing message or call to action -->
@@ -122,7 +97,6 @@
 
   <div class="row row-content">
     <div class="col-xs-12">
-
 
       <div id="indexCarousel" class="carousel slide" data-ride="carousel">
 
@@ -184,6 +158,16 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+
+        <!--Play and Pause Buttons-->
+        <div class="btn-group" id="indexCarouselButtons">
+          <button class="btn btn-danger btn-xs" id="carousel-pause">
+            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+          </button>
+          <button class="btn btn-danger btn-xs" id="carousel-play">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -310,6 +294,32 @@
   </div>
 </footer>
 
+<!--Login Modal-->
+<div class="modal fade" id="loginModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login </h4>
+      </div>
+      <div class="modal-body">
+        <form action="" class="form-inline">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password" class="form-control" placeholder="Password">
+            <label for="" class=""><input type="checkbox" value=""> Remember me</label>
+            <p class="padded"></p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-default ">Sign In</button>
+              <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Reserve a table Modal-->
 <div class="modal fade" id="reservationModal" role="dialog">
   <div class="modal-dialog">
@@ -430,6 +440,16 @@
 <script>
   $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('#indexCarousel').carousel({interval: 2000});
+
+    $('#carousel-pause').click(function(){
+      $('#indexCarousel').carousel('pause');
+    });
+
+    $('#carousel-play').click(function(){
+      $('#indexCarousel').carousel('cycle');
+    });
   });
 </script>
 </body>
